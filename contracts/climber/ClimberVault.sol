@@ -15,12 +15,6 @@ import "./ClimberTimelock.sol";
  */
 contract ClimberVault is Initializable, OwnableUpgradeable, UUPSUpgradeable {
 
-    //  uint8 private _initialized;
-    // bool private _initializing;
-    // uint256[50] private __gap;
-    // address private _owner;
-
-    
     uint256 public constant WITHDRAWAL_LIMIT = 1 ether;
     uint256 public constant WAITING_PERIOD = 15 days;
 
