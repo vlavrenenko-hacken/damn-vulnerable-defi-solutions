@@ -1,0 +1,3 @@
+{   
+"remappings": [ "@openzeppelin/=/project/node_modules/@openzeppelin/" ]
+}
