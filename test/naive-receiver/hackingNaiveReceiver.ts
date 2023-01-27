@@ -27,7 +27,7 @@ describe("NaiveReceiver Test", function () {
     const receiver = await FlashLoanReceiverFactory.deploy(pool.address);
     await deployer.sendTransaction({to: receiver.address, value: ETHER_IN_RECEIVER});
 
-    const Hacker = await ethers.getContractFactory("Hacker", deployer);
+    const Hacker = await ethers.getContractFactory("NaiveReceiverHacker", deployer);
     const hacker = await Hacker.deploy();
 
     return {pool, receiver, hacker}
